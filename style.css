@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9tjQTbvIdrYTkHLvCuN8BwHaEw%26pid%3DApi&f=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.chessboard{
+    background-color: #8d8282;
+    box-shadow: inset -1px 3px 8px 5px #000000a1, 2px 5px 16px 0px #66666611, 9px 7px 0px 1px rgba(0,0,0,0.5);
+    border: 19px outset rgba(0, 0, 0, 0.185);
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    transition: 2s;
+}
+
+.white {
+    
+    width: 12.5%;
+    height: 12.5%;
+    background-color: rgba(39, 39, 39, 0.767);
+    font-size:50px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.black {
+   
+    width: 12.5%;
+    height: 12.5%;
+    background-color: rgb(207, 207, 207);
+      font-size:50px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+} 
+p{
+    display: none;
+    
+}
+
+.hover:hover p{
+    color: rgb(90, 129, 23);
+    display: block;
+   
+}
+.hover:hover .icon{
+    display: none;
+}
+input{
+    display: none;
+}
+
+label{
+  font-size: 35px;
+  border: none;
+  border-radius: 40px;
+  margin-right: 40px;
+  background-color: rgba(41, 246, 0, 0);
+  
+}
+label:hover{
+     box-shadow: 10px 10px 99px 6px rgb(255, 255, 255);
+    
+    
+}
+
+input:checked ~ .chessboard {
+    transform: rotate(180deg);
+    transition: 2s;
+}
+
+.move:hover{
+    border: solid rgba(0, 47, 255, 0.561) 1rem;
+    box-shadow: black 3px 3px 3px;
+    width: 70px;
+    height: 70px;
+}
+
+.icon{
+  text-shadow: yellow 3px 3px 3px;
+
+}
+   
+
+
